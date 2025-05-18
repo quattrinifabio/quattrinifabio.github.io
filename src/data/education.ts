@@ -10,17 +10,16 @@ export interface Education {
 export const educationData: Education[] = [
   // If you don't want to show education, just make the array empty.
   {
-    year: "2021—Present",
-    institution: "Stanford University",
-    degree: "Ph.D. in Computer Science",
-    advisor: "Prof. Sarah Johnson",
+    year: "2023—Present",
+    institution: "University of Modena and Reggio Emilia",
+    degree: "Ph.D. in Artificial Intelligence",
+    advisor: "Prof. Rita Cucchiara and Dr. Silvia Cascianelli",
   },
   {
-    year: "2017—2021",
-    institution: "Massachusetts Institute of Technology",
-    degree: "B.S. in Computer Science and Mathematics",
-    thesis: "Algorithmic Approaches to Causal Discovery",
-    // Optional links to thesis
-    // thesisUrl: "https://dspace.mit.edu/handle/1721.1/149111"
+    year: "2019—2022",
+    institution: "University of Modena and Reggio Emilia",
+    degree: "M.S. in Computer Engineering, 110 CUM LAUDE",
+    thesis: "Introducing Vision Transformers in Denoising Diffusion Probabilistic Models",
+    thesisUrl: "https://morethesis.unimore.it/theses/available/etd-11112022-135122/"
   },
 ];

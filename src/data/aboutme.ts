@@ -18,22 +18,26 @@ export interface AboutMe {
 }
 
 export const aboutMe: AboutMe = {
-  name: "Jane R. Smith",
+  name: "Fabio Quattrini",
   title: "Ph.D. Candidate",
-  institution: "Stanford University",
+  institution: "AImageLab @ University of Modena and Reggio Emilia",
   // Note that links work in the description
-  description:
-    "I'm a final-year <a href='https://www.stanford.edu'>PhD candidate</a> working at the intersection of causal inference and machine learning. My research focuses on developing robust, interpretable systems that can reason about cause and effect in complex environments.",
-  email: "______@stanford.edu",
+  description: `
+  I am a Ph.D student in Artificial Intelligence at <a href="https://aimagelab.ing.unimore.it/imagelab/index.asp">AImageLab</a> (University of Modena and Reggio Emila), advised by <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1">Rita Cucchiara</a> and <a href="https://silviacascianelli.netlify.app/">Silvia Cascianelli</a>. I am working in visually-rich Document understanding and generation, exploring techniques in handwriting imitation, image generation, and document understanding.
+  <br>
+  <br> 
+  Additionally, I gained valuable experience as an Applied Scientist Intern at Amazon CVNA in 2025, where I worked for six months on foundation GenAI models to establish visual understanding and generation capabilities in images with text.
+`,
+  email: "fabio.quattrini@unimore.it",
   imageUrl:
-    "https://images.unsplash.com/photo-1581481615985-ba4775734a9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  googleScholarUrl: "https://scholar.google.com/citations?user=bWtMl_MAAAAJ",
-  githubUsername: "janesmith",
-  linkedinUsername: "janesmith",
-  twitterUsername: "janesmith",
-  blogUrl: "https://",
-  cvUrl: "https://",
-  institutionUrl: "https://www.stanford.edu",
+    "/images/photo_bio.jpg",
+  googleScholarUrl: "https://scholar.google.com/citations?user=mx7S6J8AAAAJ",
+  githubUsername: "quattrinifabio",
+  linkedinUsername: "fabio-quattrini-8b0a18244/",
+  twitterUsername: "quattrini_fabio",
+  // blogUrl: "https://",
+  // cvUrl: "https://",
+  institutionUrl: "https://aimagelab.ing.unimore.it/imagelab/index.asp",
   // altName: "",
-  // secretDescription: "I like dogs.",
+  // secretDescription: "",
 };

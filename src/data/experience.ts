@@ -12,9 +12,9 @@ export const experienceData: Experience[] = [
   {
     date: "09/2024 - 03/2025",
     title: "Applied Scientist Intern",
-    company: "Amazon Science Berlin",
+    company: "Amazon Berlin",
     description:
-      "Worked on MultiModal Models ",
+      "Research on foundation GenAI models to establish visual understanding and generation capabilities in images with text.",
     advisor: "Bojan Pepik and Michael Opitz",
     companyUrl: "https://www.amazon.science/",
   },

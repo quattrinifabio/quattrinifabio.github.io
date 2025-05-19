@@ -26,7 +26,7 @@ export const aboutMe: AboutMe = {
   I am a Ph.D student in Artificial Intelligence at <a href="https://aimagelab.ing.unimore.it/imagelab/index.asp">AImageLab</a> (University of Modena and Reggio Emila), advised by <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1">Rita Cucchiara</a> and <a href="https://silviacascianelli.netlify.app/">Silvia Cascianelli</a>. I am working in visually-rich Document understanding and generation, exploring techniques in handwriting imitation, image generation, and document understanding.
   <br>
   <br> 
-  Additionally, I gained valuable experience as an Applied Scientist Intern at Amazon CVNA in 2025, where I worked for six months on foundation GenAI models to establish visual understanding and generation capabilities in images with text.
+  Additionally, I gained valuable experience as an Applied Scientist Intern at Amazon CVNA in 2025, where I worked for six months performing research on foundation GenAI models to establish visual understanding and generation capabilities in images with text.
 `,
   email: "fabio.quattrini@unimore.it",
   imageUrl:
@@ -36,7 +36,7 @@ export const aboutMe: AboutMe = {
   linkedinUsername: "fabio-quattrini-8b0a18244/",
   twitterUsername: "quattrini_fabio",
   // blogUrl: "https://",
-  // cvUrl: "https://",
+  cvUrl: "/cv.pdf",
   institutionUrl: "https://aimagelab.ing.unimore.it/imagelab/index.asp",
   // altName: "",
   // secretDescription: "",

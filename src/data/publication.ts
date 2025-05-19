@@ -31,9 +31,21 @@ export const publicationData: Publication[] = [
     title: "Merging and Splitting Diffusion Paths for Semantically Coherent Panoramas",
     authors: "Fabio Quattrini, Vittorio Pippi, Silvia Cascianelli, Rita Cucchiara",
     paperUrl: "https://arxiv.org/abs/2408.15660",
-    codeUrl: "https://github.com/aimagela15660b/MAD",
+    codeUrl: "https://github.com/aimagelab/MAD",
     // bibtex: "https://arxiv.org/abs/2408.17074.bib",
     tldr: "We introduce the Merge-Attend-Diffuse operator to modify pre-trained diffusion models at inference-time and generate panorama images. Our approach improves semantic and perceptual coherence in panoramas by merging diffusion paths and reprogramming attention layers, outperforming previous methods. ",    
     imageUrl: "/images/mad.png",
+  },
+    {
+    year: "2024",
+    conference: "AI for Visual Arts Workshop, ECCV",
+    title: "Alfie: Democratising RGBA Image Generation With No $$$",
+    authors: "Fabio Quattrini, Vittorio Pippi, Silvia Cascianelli, Rita Cucchiara",
+    paperUrl: "https://arxiv.org/abs/2408.14826",
+    codeUrl: "https://github.com/aimagelab/Alfie",
+    // bibtex: "https://arxiv.org/abs/2408.14826.bib",
+    tldr: "Most image generation models are incapable of generating RGBA images, required by graphic designers for composition in artworks. In this work, we propose a fully-automated approach for obtaining RGBA illustrations by modifying the inference-time behavior of a pre-trained Diffusion Transformer model, exploiting the prompt-guided controllability and visual quality offered by such models with no additional computational cost. We force the generation of entire subjects without sharp croppings, whose background is easily removed for seamless integration into design projects or artistic scenes. We show with a user study that, in most cases, users prefer our solution over generating and then matting an image, and we show that our generated illustrations yield good results when used as inputs for composite scene generation pipelines.",    
+    imageUrl: "/images/alfie.png",
+    award: "⭐ Oral Spotlight (Top 15%)"
   },
 ];

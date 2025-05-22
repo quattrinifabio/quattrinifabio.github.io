@@ -21,8 +21,8 @@ export const publicationData: Publication[] = [
     paperUrl: "https://arxiv.org/abs/2503.17074",
     codeUrl: "https://huggingface.co/blowing-up-groundhogs/emuru",
     // bibtex: "https://arxiv.org/abs/2503.17074.bib",
-    tldr: "Existing Styled Handwritten Text Generation (HTG) strategies fail to generalize to novel styles and have technical constraints such as maximum output lenght. We propose a novel framework that leverages a powerful text image representation model (a variational autoencoder) combined with an autoregressive Transformer to generate styled text images conditioned on textual content and writing style examples. Our approach, solely on a diverse, synthetic dataset of English with over 100,000 fonts, shows the capability to reproduce unseen styles in zero-shot. Moreover, our model generates images without background artifacts, which are easier to use for downstream applications. Extensive evaluation on both typewritten and handwritten, any-length text image generation scenarios demonstrates the effectiveness of our approach.",    
-    imageUrl: "/images/emuru.png",
+    tldr: "Existing styled handwritten text generation (HTG) methods struggle to generalize to new styles and have technical constraints like maximum output length. We propose a new framework that combines a variational autoencoder with an autoregressive Transformer to generate styled text images based on both content and style examples. Trained solely on a diverse synthetic dataset of English text with over 100,000 fonts, our approach can reproduce previously unseen styles in zero-shot. Our model generates clean images without background artifacts, making them easier for downstream use. We extensively evaluate our method on both typewritten and handwritten text images of any length.",
+     imageUrl: "/images/emuru.png",
     award: "🏆 Oustanding Reviewer Award",
   },
   {
@@ -33,7 +33,7 @@ export const publicationData: Publication[] = [
     paperUrl: "https://arxiv.org/abs/2408.15660",
     codeUrl: "https://github.com/aimagelab/MAD",
     // bibtex: "https://arxiv.org/abs/2408.17074.bib",
-    tldr: "We introduce the Merge-Attend-Diffuse operator to modify pre-trained diffusion models at inference-time and generate panorama images. Our approach improves semantic and perceptual coherence in panoramas by merging diffusion paths and reprogramming attention layers, outperforming previous methods. ",    
+    tldr: "Existing panorama generation methods with diffusion models often create images that look aligned but lack semantic consistency. We introduce the Merge-Attend-Diffuse operator (MAD), which modifies pretrained diffusion models at inference time to generate panorama images with improved semantic and perceptual coherence. By merging diffusion paths and reprogramming self- and cross-attention layers, our approach addresses the semantic incoherence of previous methods and outperforms them, as demonstrated by extensive experiments and a user study.",
     imageUrl: "/images/mad.png",
   },
   {
@@ -44,7 +44,7 @@ export const publicationData: Publication[] = [
     paperUrl: "https://arxiv.org/abs/2408.14826",
     codeUrl: "https://github.com/aimagelab/Alfie",
     // bibtex: "https://arxiv.org/abs/2408.14826.bib",
-    tldr: "Most image generation models are incapable of generating RGBA images, required by graphic designers for composition in artworks. In this work, we propose a fully-automated approach for obtaining RGBA illustrations by modifying the inference-time behavior of a pre-trained Diffusion Transformer model, exploiting the prompt-guided controllability and visual quality offered by such models with no additional computational cost. We force the generation of entire subjects without sharp croppings, whose background is easily removed for seamless integration into design projects or artistic scenes. We show with a user study that, in most cases, users prefer our solution over generating and then matting an image, and we show that our generated illustrations yield good results when used as inputs for composite scene generation pipelines.",    
+    tldr: "Most image generation models are incapable of generating RGBA images, required by graphic designers for composition in artworks.  We propose a fully automated approach that modifies the inference process of a pretrained Diffusion Transformer to generate RGBA images with prompt-guided control and high visual quality.  Our method enables the creation of complete subjects with easily removable backgrounds, making them ideal for integration into design projects. A user study shows that users prefer, in most cases, our solution over traditional generate-and-matte pipelines, and our illustrations work well in composite scene generation.",    
     imageUrl: "/images/alfie.png",
     award: "⭐ Oral Spotlight (Top 15%)"
   },
@@ -56,7 +56,30 @@ export const publicationData: Publication[] = [
     paperUrl: "https://arxiv.org/abs/2408.15646",
     codeUrl: "https://github.com/aimagelab/mugat",
     // bibtex: "https://arxiv.org/abs/2408.14826.bib",
-    tldr: "We focus on multi-page visually rich documents, where the layout is as important as the text content to convey the contained information through the structure. In this context, Document Parsing has emerged as a task to process document images and convert them into machine-readable structured representations, usually markup language,. However, most current models consider single-paged documents and focus on business and scientific documents. In this work, we propose an adaptation to process multi-page context.",    
+    tldr: "We focus on multi-page visually rich documents, where the layout is as important as the text content to convey the contained information through the structure. In this context, Document Parsing has emerged as a task to process document images and convert them into machine-readable structured representations, usually markup language,. However, most current models consider single-paged documents. In this work, we propose an adaptation to process multi-page context.",    
     imageUrl: "/images/mugat.png"
+  },
+  {
+    year: "2024",
+    conference: "ICDAR",
+    title: "Binarizing Documents by Leveraging both Space and Frequency",
+    authors: "Fabio Quattrini, Vittorio Pippi, Silvia Cascianelli, Rita Cucchiara",
+    paperUrl: "https://arxiv.org/pdf/2404.17243",
+    codeUrl: "https://github.com/aimagelab/FourBi/blob/main/README.md",
+    // bibtex: "https://arxiv.org/abs/2408.14826.bib",
+    tldr: "Document image binarization remains an unsolved problem due to variable page degradations and the need for both local and global context. We propose a solution based on Fast Fourier Convolutions, which models global information more effectively than standard convolutions and scales better to different resolutions at inference time, while being more efficient than Vision Transformers. Our method is validated on diverse document degradations.",    
+    imageUrl: "/images/fourbi.png",
+  award: "⭐ Oral"
+  },
+  {
+    year: "2023",
+    conference: "BMVC",
+    title: "HWD: A Novel Evaluation Score for Styled Handwritten Text Generation",
+    authors: "Vittorio Pippi, Fabio Quattrini, Silvia Cascianelli, Rita Cucchiara",
+    paperUrl: "https://arxiv.org/abs/2310.20316",
+    codeUrl: "https://github.com/aimagelab/HWD",
+    // bibtex: "https://arxiv.org/abs/2408.14826.bib",
+    tldr: "We introduce Handwriting Distance (HWD), a new metric for evaluating Styled Handwritten Text Generation models. HWD measures similarity in the feature space of a network trained to extract handwriting style features from variable-length images. We show its effectiveness with extensive experiments.",    
+    imageUrl: "/images/hwd.png",
   },
 ];

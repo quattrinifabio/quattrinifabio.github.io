@@ -33,7 +33,7 @@ export const aboutMe: AboutMe = {
     "/images/photo_bio.jpg",
   googleScholarUrl: "https://scholar.google.com/citations?user=mx7S6J8AAAAJ",
   githubUsername: "quattrinifabio",
-  linkedinUsername: "fabioquattrini/",
+  linkedinUsername: "fabioquattrini",
   twitterUsername: "quattrini_fabio",
   // blogUrl: "https://",
   cvUrl: "/cv.pdf",

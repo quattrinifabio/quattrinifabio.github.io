@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Image from "next/image"; // <-- Import Next Image
+import Image from "next/image"; 
 
 interface ImageViewerProps {
   isOpen: boolean;

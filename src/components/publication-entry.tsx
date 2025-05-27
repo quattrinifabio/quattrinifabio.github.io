@@ -4,15 +4,14 @@ import Image from "next/image";
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Publication } from "@/data/publication";
-import { ImageViewer } from "./image-viewer";
-import Link from "next/link";
+// import { ImageViewer } from "./image-viewer";
 
 export function PublicationEntry({
   publication,
 }: {
   publication: Publication;
 }) {
-  const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
+  // const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
 
   return (
     <div className="flex flex-col sm:flex-row gap-6">

@@ -4,10 +4,10 @@ import Image from "next/image";
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Portfolio } from "@/data/portfolio";
-import { ImageViewer } from "./image-viewer";
+// import { ImageViewer } from "./image-viewer";
 
 export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
-  const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
+  // const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
 
   return (
     <div className="flex flex-col sm:flex-row gap-6">

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Portfolio } from "@/data/portfolio";
 // import { ImageViewer } from "./image-viewer";

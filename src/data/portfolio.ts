@@ -5,6 +5,7 @@ export interface Portfolio {
   imageUrl?: string;
   projectUrl?: string;
   codeUrl?: string;
+  pdfUrl?: string; // Optional PDF URL for detailed project documentation
 }
 
 export const portfolioData: Portfolio[] = [

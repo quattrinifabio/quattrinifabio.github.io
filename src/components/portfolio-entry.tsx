@@ -12,27 +12,44 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
   return (
     <div className="flex flex-col sm:flex-row gap-6">
       {portfolio.imageUrl && (
-        <div className="w-1/4 min-w-[160px] relative">
-          <div 
-            className="cursor-pointer hover:opacity-90 transition-opacity"
-            onClick={() => setIsImageViewerOpen(true)}
-          >
-            <Image
-              src={portfolio.imageUrl}
-              alt={portfolio.title}
-              width={160}
-              height={200}
-              className="rounded-lg"
-            />
-          </div>
-          <ImageViewer 
-            isOpen={isImageViewerOpen}
-            imageUrl={portfolio.imageUrl}
-            alt={portfolio.title}
-            onClose={() => setIsImageViewerOpen(false)}
-          />
-        </div>
-      )}
+            <div className="w-1/4 min-w-[160px] relative">
+              {portfolio.pdfUrl ? (
+                <a
+                  href={portfolio.pdfUrl}
+                  className="relative cursor-pointer group border-[1.5px] border-gray-900 rounded-lg block"
+                >
+                  <Image
+                    src={portfolio.imageUrl}
+                    alt={portfolio.title}
+                    width={160}
+                    height={200}
+                    className="rounded-lg"
+                  />
+                  {/* Gray overlay (on hover only, when link exists) */}
+                  <div
+                    className="
+                      absolute inset-0 rounded-lg
+                      bg-gray-400/40
+                      opacity-0 group-hover:opacity-100
+                      transition-opacity duration-300
+                      pointer-events-none
+                    "
+                  />
+                </a>
+              ) : (
+                <div className="relative border-[1.5px] border-gray-900 rounded-lg block">
+                  <Image
+                    src={portfolio.imageUrl}
+                    alt={portfolio.title}
+                    width={160}
+                    height={200}
+                    className="rounded-lg"
+                  />
+                  {/* No hover overlay here! */}
+                </div>
+              )}
+            </div>
+          )}
       <div className="flex flex-col flex-1">
         <h3 className="font-serif text-md mb-3">
           {portfolio.projectUrl ? (

@@ -27,7 +27,7 @@ export function PublicationEntry({
               alt={publication.title}
               width={160}
               height={200}
-              className="rounded-lg transition-all duration-300"
+              className="rounded-lg transition-all duration-300 hidden md:block"
             />
             {/* Gray overlay (on hover only, when link exists) */}
             <div
@@ -47,7 +47,7 @@ export function PublicationEntry({
               alt={publication.title}
               width={160}
               height={200}
-              className="rounded-lg transition-all duration-300"
+              className="rounded-lg transition-all duration-300 hidden md:block"
             />
             {/* No hover overlay here! */}
           </div>

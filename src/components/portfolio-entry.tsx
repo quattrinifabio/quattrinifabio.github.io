@@ -23,7 +23,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
                     alt={portfolio.title}
                     width={160}
                     height={200}
-                    className="rounded-lg"
+                    className="rounded-lg hidden md:block"
                   />
                   {/* Gray overlay (on hover only, when link exists) */}
                   <div
@@ -43,7 +43,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
                     alt={portfolio.title}
                     width={160}
                     height={200}
-                    className="rounded-lg"
+                    className="rounded-lg hidden md:block"
                   />
                   {/* No hover overlay here! */}
                 </div>

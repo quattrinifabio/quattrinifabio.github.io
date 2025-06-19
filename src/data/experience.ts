@@ -14,7 +14,7 @@ export const experienceData: Experience[] = [
     title: "Applied Scientist Intern",
     company: "Amazon Berlin",
     description:
-      "Research on foundation GenAI models to establish visual understanding and generation capabilities in images with text. Managed project planning from ideation to completion and supervised data collection and annotation team.",
+      "Research on foundation GenAI models to establish visual understanding and generation capabilities in images with text. Managed project planning and supervised data collection and annotation team.",
     advisor: "Bojan Pepik and Michael Opitz",
     companyUrl: "https://www.amazon.science/",
   },

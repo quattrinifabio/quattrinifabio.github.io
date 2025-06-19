@@ -6,54 +6,71 @@ import { ArrowUpRight } from "lucide-react";
 import { Publication } from "@/data/publication";
 // import { ImageViewer } from "./image-viewer";
 
+
+
+// Helper function to parse the authors string and make a specific name bold
+const formatAuthors = (authorsString: string, nameToBold: string) => {
+  const parts = authorsString.split(new RegExp(`(${nameToBold})`, 'gi'));
+  return parts.map((part, index) => {
+    if (part.toLowerCase() === nameToBold.toLowerCase()) {
+      // Use a span with a custom font-weight class instead of <strong>
+      return <span key={index} className="font-semibold">{part}</span>;
+      // Other options for font-weight in Tailwind:
+      // font-medium (500)
+      // font-semibold (600) - This is a good choice for "a bit less bold" than default bold (700)
+      // font-bold (700) - This is what <strong> usually equates to
+      // font-extrabold (800)
+      // font-black (900)
+    }
+    return part;
+  });
+};
+
+
 export function PublicationEntry({
   publication,
 }: {
   publication: Publication;
 }) {
-  // const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
-
   return (
     <div className="flex flex-col sm:flex-row gap-6">
-    {publication.imageUrl && (
-      <div className="w-full sm:w-1/4 min-w-[160px] relative">
-        {publication.pdfUrl ? (
-          <a
-            href={publication.pdfUrl}
-            className="relative cursor-pointer group border-[1.5px] border-gray-900 rounded-lg block"
-          >
-            <Image
-              src={publication.imageUrl}
-              alt={publication.title}
-              width={160}
-              height={200}
-              className="rounded-lg transition-all duration-300 hidden md:block"
-            />
-            {/* Gray overlay (on hover only, when link exists) */}
-            <div
-              className="
-                absolute inset-0 rounded-lg
-                bg-gray-400/40
-                opacity-0 group-hover:opacity-100
-                transition-opacity duration-300
-                pointer-events-none
-              "
-            />
-          </a>
-        ) : (
-          <div className="relative border-[1.5px] border-gray-900 rounded-lg block">
-            <Image
-              src={publication.imageUrl}
-              alt={publication.title}
-              width={160}
-              height={200}
-              className="rounded-lg transition-all duration-300 hidden md:block"
-            />
-            {/* No hover overlay here! */}
-          </div>
-        )}
-      </div>
-    )}
+      {publication.imageUrl && (
+        <div className="w-full sm:w-1/4 min-w-[160px] relative">
+          {publication.pdfUrl ? (
+            <a
+              href={publication.pdfUrl}
+              className="relative cursor-pointer group border-[1.5px] border-gray-900 rounded-lg block"
+            >
+              <Image
+                src={publication.imageUrl}
+                alt={publication.title}
+                width={160}
+                height={200}
+                className="rounded-lg transition-all duration-300 hidden md:block"
+              />
+              <div
+                className="
+                  absolute inset-0 rounded-lg
+                  bg-gray-400/40
+                  opacity-0 group-hover:opacity-100
+                  transition-opacity duration-300
+                  pointer-events-none
+                "
+              />
+            </a>
+          ) : (
+            <div className="relative border-[1.5px] border-gray-900 rounded-lg block">
+              <Image
+                src={publication.imageUrl}
+                alt={publication.title}
+                width={160}
+                height={200}
+                className="rounded-lg transition-all duration-300 hidden md:block"
+              />
+            </div>
+          )}
+        </div>
+      )}
       <div className="flex flex-col flex-1">
         <div className="flex flex-row gap-4 items-center mb-2">
           <p className="text-xs text-zinc-500">
@@ -69,7 +86,10 @@ export function PublicationEntry({
           )}
         </div>
         <h3 className="font-serif text-md mb-3">{publication.title}</h3>
-        <p className="text-sm text-zinc-600 mb-4">{publication.authors}</p>
+        {/* Render the formatted authors */}
+        <p className="text-sm text-zinc-600 mb-4">
+          {formatAuthors(publication.authors, "Fabio Quattrini")}
+        </p>
         <div className="flex flex-row gap-6">
           {publication.paperUrl && (
             <a

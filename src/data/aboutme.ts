@@ -23,7 +23,7 @@ export const aboutMe: AboutMe = {
   institution: "AImageLab @ University of Modena and Reggio Emilia",
   // Note that links work in the description
   description: `
-  I am a Ph.D student in Artificial Intelligence at <a href="https://aimagelab.ing.unimore.it/imagelab/index.asp">AImageLab</a> (University of Modena and Reggio Emila), advised by <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1">Rita Cucchiara</a> and <a href="https://silviacascianelli.netlify.app/">Silvia Cascianelli</a>. I am working in visually-rich Document understanding and generation, exploring techniques in handwriting imitation, image generation, and document understanding.
+  I am a Ph.D student in Artificial Intelligence at <a href="https://aimagelab.ing.unimore.it/imagelab/index.asp">AImageLab</a> (University of Modena and Reggio Emila), advised by <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1">Rita Cucchiara</a> and <a href="https://silviacascianelli.netlify.app/">Silvia Cascianelli</a>. I am working in visually-rich Document Understanding and Generation, exploring techniques in handwriting imitation, image generation, and document understanding.
   <br>
   <br> 
   Additionally, I gained valuable experience as an Applied Scientist Intern at Amazon CVNA in 2025, where I worked for six months performing research on foundation GenAI models to establish visual understanding and generation capabilities in images with text.

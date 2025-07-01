@@ -28,7 +28,7 @@ export const aboutMe: AboutMe = {
   <br> 
   Additionally, I gained valuable experience as an Applied Scientist Intern at Amazon CVNA in 2025, where I worked for six months performing research on foundation GenAI models to establish visual understanding and generation capabilities in images with text.
 `,
-  email: "fabio.quattrini@unimore.it",
+  email: "fabio.quattrini[at]unimore[dot]it",
   imageUrl:
     "/images/photo_bio.jpg",
   googleScholarUrl: "https://scholar.google.com/citations?user=mx7S6J8AAAAJ",

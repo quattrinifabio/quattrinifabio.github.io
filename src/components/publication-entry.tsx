@@ -8,13 +8,13 @@ import { Publication } from "@/data/publication";
 
 
 
-// Helper function to parse the authors string and make a specific name bold
-const formatAuthors = (authorsString: string, nameToBold: string) => {
-  const parts = authorsString.split(new RegExp(`(${nameToBold})`, 'gi'));
+// Helper function to parse the authors string and make a specific name bold and underlined
+const formatAuthors = (authorsString: string, nameToBoldAndUnderline: string) => {
+  const parts = authorsString.split(new RegExp(`(${nameToBoldAndUnderline})`, 'gi'));
   return parts.map((part, index) => {
-    if (part.toLowerCase() === nameToBold.toLowerCase()) {
+    if (part.toLowerCase() === nameToBoldAndUnderline.toLowerCase()) {
       // Use a span with a custom font-weight class instead of <strong>
-      return <span key={index} className="font-semibold">{part}</span>;
+      return <span key={index} className="font-semibold underline">{part}</span>;
       // Other options for font-weight in Tailwind:
       // font-medium (500)
       // font-semibold (600) - This is a good choice for "a bit less bold" than default bold (700)
@@ -113,6 +113,18 @@ export function PublicationEntry({
                 className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
               />
               <span className="tracking-wider uppercase">Code</span>
+            </a>
+          )}
+          {publication.posterUrl && (
+            <a
+              href={publication.posterUrl}
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+            >
+              <ArrowUpRight
+                size={12}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+              />
+              <span className="tracking-wider uppercase">Poster</span>
             </a>
           )}
           {publication.bibtex && (

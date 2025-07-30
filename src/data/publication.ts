@@ -6,6 +6,7 @@ export interface Publication {
   paperUrl?: string;
   codeUrl?: string;
   posterUrl?: string;
+  HFUrl?: string;
   bibtex?: string;
   tldr?: string;
   imageUrl?: string;
@@ -21,7 +22,8 @@ export const publicationData: Publication[] = [
     title: "Zero-Shot Styled Text Image Generation, but Make It Autoregressive",
     authors: "Vittorio Pippi*, Fabio Quattrini*, Silvia Cascianelli, Alessio Tonioni, Rita Cucchiara",
     paperUrl: "https://arxiv.org/abs/2503.17074",
-    codeUrl: "https://huggingface.co/blowing-up-groundhogs/emuru",
+    codeUrl: "https://github.com/aimagelab/Zero-Shot-Styled-Text-Image-Generation-but-Make-It-Autoregressive",
+    HFUrl: "https://huggingface.co/blowing-up-groundhogs/emuru",
     posterUrl: "/posters/Emuru.pdf",
     // bibtex: "https://arxiv.org/abs/2503.17074.bib",
     tldr: "Existing styled handwritten text generation (HTG) methods struggle to generalize to new styles and have technical constraints like maximum output length. We propose a new framework that combines a variational autoencoder with an autoregressive Transformer to generate styled text images based on both content and style examples. Trained solely on a diverse synthetic dataset of English text with over 100,000 fonts, our approach can reproduce previously unseen styles in zero-shot. Our model generates clean images without background artifacts, making them easier for downstream use. We extensively evaluate our method on both typewritten and handwritten text images of any length.",

@@ -76,7 +76,7 @@ export const publicationData: Publication[] = [
     title: "Binarizing Documents by Leveraging both Space and Frequency",
     authors: "Fabio Quattrini, Vittorio Pippi, Silvia Cascianelli, Rita Cucchiara",
     paperUrl: "https://arxiv.org/pdf/2404.17243",
-    codeUrl: "https://github.com/aimagelab/FourBi/blob/main/README.md",
+    codeUrl: "https://github.com/aimagelab/FourBi",
     // bibtex: "https://arxiv.org/abs/2408.14826.bib",
     tldr: "Document image binarization remains an unsolved problem due to variable page degradations and the need for both local and global context. We propose a solution based on Fast Fourier Convolutions, which models global information more effectively than standard convolutions and scales better to different resolutions at inference time, while being more efficient than Vision Transformers. Our method is validated on diverse document degradations.",    
     imageUrl: "/images/fourbi.jpg",
